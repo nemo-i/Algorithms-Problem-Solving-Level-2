@@ -1,6 +1,7 @@
 #pragma once
 #include<iostream>
 #include<string>
+using namespace std;
 enum enPalindrome;
 int GetHalfNumber(int number);
 bool IsRemainingEqualZero(int nom, int dom);
@@ -23,3 +24,4 @@ void CountDigitFrequency(int number);
 void PrintResversedNumber(int number);
 enPalindrome IsNumberPalindrome(int number);
 void PrintPalindromeState(int number);
+void PrintIvertedNumberPattern(short number);

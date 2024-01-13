@@ -127,7 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Algorithms-ProblemSolving-Level-2.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PerfectNumber.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PerfectNumber.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

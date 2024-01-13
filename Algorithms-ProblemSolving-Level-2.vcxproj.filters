@@ -21,9 +21,18 @@
     <ClCompile Include="PerfectNumber.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ReverseMyNumber.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SumOfDigits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DigitFrequency.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PerfectNumber.h">
+    <ClInclude Include="MyMathLib.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

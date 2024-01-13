@@ -24,12 +24,14 @@ bool IsPerfectNumber(int number) {
 	return SumDividableNumber(number) == number;
 }
 
-int ReadNumber() {
+int ReadNumber(string msg) {
 	int number;
-	cout << "Please Enter Number To Check If It's Perfect Or Not:" << endl;
-	cin >> number;
+	do {
+		cout << msg << endl;
+		cin >> number;
+		
+	} while (number < 0);
 	return number;
-
 }
 
 void PrintPrefectNumber(int number) {

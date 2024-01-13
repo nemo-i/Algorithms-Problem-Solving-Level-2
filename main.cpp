@@ -1,8 +1,10 @@
-#include "PerfectNumber.h"
+#include"MyMathLib.h"
 #include<iostream>
 #include<string>
-
+#include<math.h>
 using namespace std;
 int main() {
-	PrintPerfectNumberInRange(ReadNumber());
+	int wholeNumber = ReadNumber("Enter The Whole Number");
+	
+	DigitFrequency(wholeNumber);
 }

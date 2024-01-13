@@ -127,11 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DigitFrequency.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PerfectNumber.cpp" />
+    <ClCompile Include="ReverseMyNumber.cpp" />
+    <ClCompile Include="SumOfDigits.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PerfectNumber.h" />
+    <ClInclude Include="MyMathLib.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

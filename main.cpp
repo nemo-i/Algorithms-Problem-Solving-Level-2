@@ -6,5 +6,5 @@ using namespace std;
 int main() {
 	int wholeNumber = ReadNumber("Enter The Whole Number");
 	
-	DigitFrequency(wholeNumber);
+	PrintPalindromeState(wholeNumber);
 }

@@ -129,6 +129,8 @@
   <ItemGroup>
     <ClCompile Include="DigitFrequency.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="NumberDigit.cpp" />
+    <ClCompile Include="PalindromeNumber.cpp" />
     <ClCompile Include="PerfectNumber.cpp" />
     <ClCompile Include="ReverseMyNumber.cpp" />
     <ClCompile Include="SumOfDigits.cpp" />

@@ -47,3 +47,12 @@ int ReverseNumber(int number) {
 	}
 	return number2;
 }
+void PrintResversedNumber(int number) {
+	int reminder = 0;
+	while (number>0)
+	{
+		reminder = number % 10;
+		number = number / 10;
+		cout << reminder << endl;
+	}
+}

@@ -3,6 +3,7 @@
 #include <string>
 #include<iostream>
 using namespace std;
+// my way
 int DigitFrequency(int number,int wholeNumber) {
 	int reminder;
 	int repate = 0;
@@ -17,6 +18,7 @@ int DigitFrequency(int number,int wholeNumber) {
 	}
 	return repate;
 }
+// my way 
 void DigitFrequency(int number) {
 	int reminder;
 
@@ -28,4 +30,16 @@ void DigitFrequency(int number) {
 	}
 
 
+}
+// instructor way 
+void CountDigitFrequency(int number) {
+	
+	for (size_t i = 0; i < 10; i++)
+	{
+		short DigitFrequany = 0;
+		DigitFrequany = DigitFrequency(i,number);
+		if (DigitFrequany > 0) {
+			cout << "Digit " << i << " Frequency Is " << DigitFrequany << " Time(s)" << endl;
+		}
+	}
 }

@@ -25,3 +25,4 @@ void PrintResversedNumber(int number);
 enPalindrome IsNumberPalindrome(int number);
 void PrintPalindromeState(int number);
 void PrintIvertedNumberPattern(short number);
+void PrintNumberPattern(short number);

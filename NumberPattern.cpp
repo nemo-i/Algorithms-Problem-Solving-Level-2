@@ -10,3 +10,12 @@ void PrintIvertedNumberPattern(short number) {
 		cout << endl;
 	}
 }
+void PrintNumberPattern(short number) {
+	for (short i = 1; i <=number; i++)
+	{
+		for (short j = i; j >= 1; j--) {
+			cout << i;
+		}
+		cout << endl;
+	}
+}

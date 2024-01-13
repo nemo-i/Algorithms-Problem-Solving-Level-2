@@ -6,5 +6,5 @@ using namespace std;
 int main() {
 	int wholeNumber = ReadNumber("Enter The Whole Number");
 	
-	PrintIvertedNumberPattern(wholeNumber);
+	PrintNumberPattern(wholeNumber);
 }

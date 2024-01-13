@@ -36,7 +36,7 @@
     <ClCompile Include="PalindromeNumber.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="NumberPattern.cpp">
+    <ClCompile Include="Patterns.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

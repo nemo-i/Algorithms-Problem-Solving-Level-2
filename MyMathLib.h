@@ -26,3 +26,5 @@ enPalindrome IsNumberPalindrome(int number);
 void PrintPalindromeState(int number);
 void PrintIvertedNumberPattern(short number);
 void PrintNumberPattern(short number);
+void InvertedLetterPattern(short number);
+void LetterPattern(short number);

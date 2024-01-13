@@ -128,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DigitFrequency.cpp" />
-    <ClCompile Include="NumberPattern.cpp" />
+    <ClCompile Include="Patterns.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NumberDigit.cpp" />
     <ClCompile Include="PalindromeNumber.cpp" />

@@ -38,3 +38,14 @@ void LetterPattern(short number) {
 		cout << endl;
 	}
 }
+void LettersFromThreeAToThreeZ() {
+	for (short i = 65; i <= 90; i++)
+	{
+		for (short j = 65; j <= 90; j++)
+		{
+			for (short z = 65; z <= 90; z++) {
+				cout << char(i) << char(j) <<char(z) <<endl;
+			}
+		}
+	}
+}

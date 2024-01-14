@@ -31,3 +31,5 @@ void LetterPattern(short number);
 void LettersFromThreeAToThreeZ();
 bool GessPasswordFromThreeLetter(string password);
 string ReadThreeLetterPassword();
+string encryptText(string text, int increptionkey);
+string decryptText(string text, int increptionkey);

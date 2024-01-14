@@ -87,3 +87,21 @@ string ReadThreeLetterPassword() {
 	return value;
 	
 }
+
+string encryptText(string text,int increptionkey) {
+	string ecryptedText = "";
+	for (short i = 0; i < text.length(); i++)
+	{
+		ecryptedText = ecryptedText + char((int)text[i] + increptionkey);
+	}
+	return ecryptedText;
+}
+
+string decryptText(string text, int increptionkey) {
+	string decryptedText = "";
+	for (short i = 0; i < text.length(); i++)
+	{
+		decryptedText = decryptedText + char((int)text[i] - increptionkey);
+	}
+	return decryptedText;
+}

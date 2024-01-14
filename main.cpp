@@ -6,5 +6,6 @@ using namespace std;
 int main() {
 	
 	
-	GessPasswordFromThreeLetter("AAF");
+	cout << encryptText("Ahmed", 10) << endl;
+	cout << decryptText("Krwon", 10) << endl;
 }

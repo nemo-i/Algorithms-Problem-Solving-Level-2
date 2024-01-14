@@ -29,3 +29,5 @@ void PrintNumberPattern(short number);
 void InvertedLetterPattern(short number);
 void LetterPattern(short number);
 void LettersFromThreeAToThreeZ();
+bool GessPasswordFromThreeLetter(string password);
+string ReadThreeLetterPassword();

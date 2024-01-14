@@ -49,3 +49,41 @@ void LettersFromThreeAToThreeZ() {
 		}
 	}
 }
+
+bool GessPasswordFromThreeLetter(string password) {
+	int counter = 0;
+	string word;
+	for (short i = 65; i <= 90; i++)
+	{
+		for (short j = 65; j <= 90; j++)
+		{
+			for (short z = 65; z <= 90; z++) {
+				word = word + char(i);
+				word = word + char(j);
+				word = word + char(z);
+				counter++;
+				cout << "Trial [" << counter << "] : ";
+				cout << word << endl;
+				if (word == password) {
+					cout << "\nPassword is " << word << "\n";
+					cout << "Found after ";
+					cout << counter << " Trial(s)\n";
+					return true;
+				}
+
+				word = "";
+			}
+		}
+	}
+	return false;
+}
+
+string ReadThreeLetterPassword() {
+	string value;
+	do {
+		cout << "Please Enter Three Letter Passowrd"<<endl;
+		cin >> value;
+	} while (value.length() != 3);
+	return value;
+	
+}

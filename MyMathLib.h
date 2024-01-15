@@ -1,6 +1,7 @@
 #pragma once
 #include<iostream>
 #include<string>
+#include<cstdlib>
 using namespace std;
 enum enPalindrome;
 int GetHalfNumber(int number);
@@ -33,3 +34,5 @@ bool GessPasswordFromThreeLetter(string password);
 string ReadThreeLetterPassword();
 string encryptText(string text, int increptionkey);
 string decryptText(string text, int increptionkey);
+
+int RandomNumber(int from, int to);

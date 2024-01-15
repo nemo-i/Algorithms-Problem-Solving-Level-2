@@ -105,3 +105,10 @@ string decryptText(string text, int increptionkey) {
 	}
 	return decryptedText;
 }
+
+
+int RandomNumber(int from, int to) {
+	// to make this function work probably put this code in main file 
+	//srand((unsigned)time(NULL));
+	return rand() % (to - from + 1) + from;
+}

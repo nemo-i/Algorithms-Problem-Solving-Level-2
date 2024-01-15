@@ -5,7 +5,6 @@
 using namespace std;
 int main() {
 	
-	
-	cout << encryptText("Ahmed", 10) << endl;
-	cout << decryptText("Krwon", 10) << endl;
+	srand((unsigned)time(NULL));
+	cout<<RandomNumber(2,10)<<endl;
 }

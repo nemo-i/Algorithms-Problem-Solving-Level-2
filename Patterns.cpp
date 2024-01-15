@@ -112,3 +112,25 @@ int RandomNumber(int from, int to) {
 	//srand((unsigned)time(NULL));
 	return rand() % (to - from + 1) + from;
 }
+
+char Random(enRandom en) {
+	// to make this function work probably put this code in main file 
+//srand((unsigned)time(NULL));
+	switch (en)
+	{
+	case enRandom::CapticalChar:
+	 return	char(RandomNumber(65,90));
+		
+	case enRandom::SmallChar:
+		return	 char(RandomNumber(97, 122));
+		
+	case enRandom::Digit:
+	return	char(RandomNumber(48, 57));
+	
+	case enRandom::SpecialChar:
+	return	char(RandomNumber(35, 38));
+		
+	default:
+		return	char(RandomNumber(35, 38));
+	}
+}

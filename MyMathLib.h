@@ -34,5 +34,11 @@ bool GessPasswordFromThreeLetter(string password);
 string ReadThreeLetterPassword();
 string encryptText(string text, int increptionkey);
 string decryptText(string text, int increptionkey);
-
+enum enRandom {
+	CapticalChar,
+	Digit,
+	SmallChar,
+	SpecialChar,
+};
 int RandomNumber(int from, int to);
+char Random(enRandom en);

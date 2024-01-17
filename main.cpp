@@ -10,5 +10,6 @@ int main() {
 	int array[100];
 	FillArrayWithRandomNumbers(totalLength,array);
 	 PrintArray(totalLength,array);
-	 cout << "Max Number" << MaxNumberInArray(array,totalLength);
+	 cout << "Max Number " << MaxNumberInArray(array, totalLength) << endl;
+	 cout << "Min Number " << MinNumberInArray(array,totalLength)<<endl;
 }

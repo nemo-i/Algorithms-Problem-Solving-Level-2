@@ -226,31 +226,40 @@ int MaxNumberInArray(int array[],int &totalLength) {
 	}
 	return holder;
 }
+int MinNumberInArray(int array[], int& totalLength) {
+	int holder = MaxNumberInArray(array,totalLength);
+	for (int i = totalLength-1; i >0; i--) {
+		if (array[i] < array[i - 1]) {
+			if (array[i] < holder) {
+				holder = array[i];
+			}
+		}
+		else
+		{
+			if (array[i - 1] < holder) {
+				holder = array[i - 1];
+			}
+		}
+	}
+	return holder;
+}
 //int MinNumberInArray(int array[], int& totalLength) {
-//	int holder = MaxNumberInArray(array,totalLength);
-//	for (int i = totalLength-1; i >0; i--) {
-//		if (array[i] < array[i - 1]) {
-//			if (array[i] < holder) {
-//				holder = array[i];
-//			}
-//		}
-//		else
-//		{
-//			if (array[i - 1] < holder) {
-//				holder = array[i - 1];
-//			}
+//	int holder = MaxNumberInArray(array, totalLength);
+//
+//	for (short i = totalLength-1; i > 0; i--)
+//	{
+//		if (array[i] < holder) {
+//			holder = array[i];
 //		}
 //	}
 //	return holder;
 //}
-int MinNumberInArray(int array[], int& totalLength) {
-	int holder = MaxNumberInArray(array, totalLength);
 
-	for (short i = totalLength-1; i > 0; i--)
+int SumOfArray(int array[], int& totalLength) {
+	int sum = 0;
+	for (short i = 0; i <totalLength; i++)
 	{
-		if (array[i] < holder) {
-			holder = array[i];
-		}
+		sum += array[i];
 	}
-	return holder;
+	return sum;
 }

@@ -51,3 +51,4 @@ int TimesRepeted(int numberToCheck, int totalArrayLength, int array[]);
 void FillArrayWithRandomNumbers(int& totalLength, int array[100]);
 int MaxNumberInArray(int array[], int& totalLength);
 int MinNumberInArray(int array[], int& totalLength);
+int SumOfArray(int array[], int& totalLength);

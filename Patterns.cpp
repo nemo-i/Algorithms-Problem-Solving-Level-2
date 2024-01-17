@@ -207,3 +207,22 @@ int TimesRepeted(int numberToCheck, int totalArrayLength, int array[]) {
 	}
 	return counter;
 };
+
+// [ 1,2,3,6,7]
+int MaxNumberInArray(int array[],int &totalLength) {
+	int holder =0;
+	for (int i = 0; i < totalLength; i++) {
+		if (array[i] > array[i + 1]) {
+			if (array[i] > holder) {
+				holder = array[i];
+			}
+		}
+		else
+		{
+			if (array[i + 1] > holder) {
+				holder = array[i + 1];
+			}
+		}
+	}
+	return holder;
+}

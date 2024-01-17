@@ -49,3 +49,4 @@ void ReadArray(int& totalLength, int array[100]);
 void PrintArray(int totalLength, int array[]);
 int TimesRepeted(int numberToCheck, int totalArrayLength, int array[]);
 void FillArrayWithRandomNumbers(int& totalLength, int array[100]);
+int MaxNumberInArray(int array[], int& totalLength);

@@ -263,3 +263,7 @@ int SumOfArray(int array[], int& totalLength) {
 	}
 	return sum;
 }
+float AverageOfArray(int array[], int& totalLength) {
+	int sum = (float)SumOfArray(array,totalLength);
+	return (float)sum / totalLength;
+}

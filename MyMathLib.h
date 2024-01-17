@@ -52,3 +52,4 @@ void FillArrayWithRandomNumbers(int& totalLength, int array[100]);
 int MaxNumberInArray(int array[], int& totalLength);
 int MinNumberInArray(int array[], int& totalLength);
 int SumOfArray(int array[], int& totalLength);
+float AverageOfArray(int array[], int& totalLength);

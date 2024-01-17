@@ -42,3 +42,10 @@ enum enRandom {
 };
 int RandomNumber(int from, int to);
 char Random(enRandom en);
+void PrintKeys(int NumberOfKeys);
+string GnereateKey();
+int ReadPostiveNumber(string msg);
+void ReadArray(int& totalLength, int array[100]);
+void PrintArray(int totalLength, int array[]);
+int TimesRepeted(int numberToCheck, int totalArrayLength, int array[]);
+void FillArrayWithRandomNumbers(int& totalLength, int array[100]);

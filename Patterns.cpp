@@ -134,3 +134,76 @@ char Random(enRandom en) {
 		return	char(RandomNumber(35, 38));
 	}
 }
+void PrintKeys(int NumberOfKeys) {
+	for (short i = 1; i <= NumberOfKeys; i++)
+	{
+		cout << "Key[" << i << "]:" << GnereateKey() << endl;
+	}
+}
+string GnereateKey() {
+	string key = "";
+	for (short i = 1; i <= 4; i++)
+	{
+		for (short j = 1; j <= 4; j++)
+		{
+			key=  key+Random(enRandom::CapticalChar);
+		}
+		if (i < 4) {
+			key = key + "-";
+		}
+	}
+	return key;
+}
+
+
+int ReadPostiveNumber(string msg) {
+	int number;
+	do {
+		cout << msg << endl;;
+		cin >> number;
+	} while (number<=0);
+	
+	return number;
+}
+
+void FillArrayWithRandomNumbers(int& totalLength, int array[100]) {
+	// to make this function work probably put this code in main file 
+//srand((unsigned)time(NULL));
+	cout << "Enter Array Length" << endl;
+	cin >> totalLength;
+	for (short i = 0; i < totalLength; i++)
+	{
+		array[i]= RandomNumber(1,100);
+	}
+}
+
+void ReadArray(int &totalLength, int array[100]) {
+	cout << "Enter Array Length" << endl;
+	cin >> totalLength;
+	cout << "Enter Array Elements" << endl;
+	for (short i = 0; i < totalLength; i++)
+	{
+		cout << "Element [" << i + 1 << "]:";
+		cin >> array[i];
+	}
+
+}
+void PrintArray(int totalLength, int array[]) {
+	for (short i = 0; i < totalLength; i++)
+	{
+		cout << array[i] << " ";
+	
+	}
+	cout << "\n";
+}
+
+int TimesRepeted(int numberToCheck, int totalArrayLength, int array[]) {
+	int counter = 0;
+	for (short i = 0; i < totalArrayLength; i++)
+	{
+		if (numberToCheck == array[i]) {
+			counter+=1;
+		}
+	}
+	return counter;
+};

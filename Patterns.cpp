@@ -266,4 +266,13 @@ int SumOfArray(int array[], int& totalLength) {
 float AverageOfArray(int array[], int& totalLength) {
 	int sum = (float)SumOfArray(array,totalLength);
 	return (float)sum / totalLength;
+
+}
+
+
+void CopyArray(int orginalArray[100], int orginalArrayTotalLength,int copiedArray[100]) {
+	for (short i = 0; i < orginalArrayTotalLength; i++)
+	{
+		copiedArray[i] = orginalArray[i];
+	}
 }

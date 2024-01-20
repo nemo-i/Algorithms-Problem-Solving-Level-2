@@ -502,3 +502,15 @@ int GetABSNumber(int number) {
 		return (0 - number);
 	}
 }
+int MyRound(float number) {
+	int num = number * 10;
+	int reminder = num % 10;
+	if (reminder > 4) {
+		return (number - (reminder/10)) + 1;
+	}
+	else
+	{
+		return (number - (reminder/10));
+	}
+	return number;
+}

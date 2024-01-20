@@ -5,6 +5,6 @@
 #include <cstdlib>
 using namespace std;
 int main() {
-	float number = 1.5;
-	cout << MyRound(number)<<endl;
+	float number = 25;
+	cout << MySquareRoot(number)<<endl;
 }

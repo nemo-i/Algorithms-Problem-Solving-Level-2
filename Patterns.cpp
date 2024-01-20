@@ -514,3 +514,11 @@ int MyRound(float number) {
 	}
 	return number;
 }
+int MySquareRoot(int number) {
+	for (short i = 1; i < number/2; i++)
+	{
+		if (number / i == i) {
+			return i;
+		}
+	}
+}

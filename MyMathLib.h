@@ -88,3 +88,4 @@ void FillArrayWithRandomNumbers(int& totalLength, int array[100], int from, int 
 int CountNegativeNumberInArray(int array[100], int length);
 int GetABSNumber(int number);
 int MyRound(float number);
+int MySquareRoot(int number);

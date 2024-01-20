@@ -444,3 +444,23 @@ void AddDistictNumberToArray(int array[100], int length, int desArray[100], int&
 		}
 	}
 }
+
+bool IsArrayPalindrome(int array[100], int length) {
+	for (short i = 0; i < length/2; i++)
+	{
+		if (!(array[i] == array[length - 1 - i])) {
+			return false;
+		}
+	}
+	return true;
+}
+int CountOddNumberInArray(int array[100], int length) {
+	int odds = 0;
+	for (short i = 0; i < length; i++)
+	{
+		if(IsOddNumber(array[i])) {
+			odds++;
+		}
+	}
+	return odds;
+}

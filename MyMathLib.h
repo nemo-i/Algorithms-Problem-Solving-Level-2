@@ -79,3 +79,6 @@ bool IsOddNumber(int number);
 void AddOnlyOddNumberToArray(int array[100], int length, int desArray[100], int& desLength);
 void AddOnlyPrimeNumbersToArray(int array[100], int length, int desArray[100], int& desLength);
 void AddDistictNumberToArray(int array[100], int length, int desArray[100], int& desLength);
+
+bool IsArrayPalindrome(int array[100], int length);
+int CountOddNumberInArray(int array[100], int length);

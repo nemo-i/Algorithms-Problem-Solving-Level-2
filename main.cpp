@@ -6,15 +6,14 @@
 using namespace std;
 int main() {
 	srand((unsigned)time(NULL));
-	int totalLength = 10;
+	int totalLength = 6;
 
-	int array[100] = {10,10,10,20,20,30,50,55,50,70};
+	int array[100] ;
 	int copiedArray[100];
-	int copiedArrayLength =0;
+	int copiedArrayLength ;
 	sArrays arrays;
 	
-	
+	FillArrayWithRandomNumbers(totalLength, array);
 	PrintArray(totalLength, array);
-	AddDistictNumberToArray(array,totalLength,copiedArray,copiedArrayLength);
-	PrintArray(copiedArrayLength,copiedArray);
+	cout << CountOddNumberInArray(array, totalLength) << endl;
 }

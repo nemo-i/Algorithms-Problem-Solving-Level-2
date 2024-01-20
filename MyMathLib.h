@@ -40,10 +40,16 @@ enum enRandom {
 	SmallChar,
 	SpecialChar,
 };
+struct sArrays {
+	int array1[100];
+	int array2[100];
+	int sumArray[100];
+	int totalLength;
+};
 int RandomNumber(int from, int to);
 char Random(enRandom en);
 void PrintKeys(int NumberOfKeys);
-string GnereateKey();
+string GnereateKeys();
 int ReadPostiveNumber(string msg);
 void ReadArray(int& totalLength, int array[100]);
 void PrintArray(int totalLength, int array[]);
@@ -54,3 +60,16 @@ int MinNumberInArray(int array[], int& totalLength);
 int SumOfArray(int array[], int& totalLength);
 float AverageOfArray(int array[], int& totalLength);
 void CopyArray(int orginalArray[100], int orginalArrayTotalLength, int copiedArray[100]);
+bool IsPrimeNumber(int number);
+void CopyPrimeNumbersFromAnyArray(int sourceArray[100], int totalLength, int distenationArray[100], int& distenationLength);
+bool IsPostiveNumber(int number);
+
+void SumOfTwoArrays(sArrays& arrays);
+void ReverseArray(int array1[100], int array2[100], int length);
+void FillArrayWithRandomKeys(string array[100], int length);
+void PrintArrayWithKeys(string array[100], int length);
+int GetItemIndexInIntArray(int array[100], int length, int itemToSearch);
+void PrintItemLocationInArray(int index);
+bool IsItemInIntArray(int array[100], int length, int itemToSearch);
+void FillIntArray(int array[100], int& length);
+int ReadAnyNumber(string msg);

@@ -137,10 +137,10 @@ char Random(enRandom en) {
 void PrintKeys(int NumberOfKeys) {
 	for (short i = 1; i <= NumberOfKeys; i++)
 	{
-		cout << "Key[" << i << "]:" << GnereateKey() << endl;
+		cout << "Key[" << i << "]:" << GnereateKeys() << endl;
 	}
 }
-string GnereateKey() {
+string GnereateKeys() {
 	string key = "";
 	for (short i = 1; i <= 4; i++)
 	{
@@ -155,6 +155,15 @@ string GnereateKey() {
 	return key;
 }
 
+string GenerateKey(int keyLength,enRandom keyType) {
+	string key = "";
+	for (short i = 0; i < keyLength; i++)
+	{
+		key = key + Random(keyType);
+	}
+	return key;
+}
+
 
 int ReadPostiveNumber(string msg) {
 	int number;
@@ -163,6 +172,12 @@ int ReadPostiveNumber(string msg) {
 		cin >> number;
 	} while (number<=0);
 	
+	return number;
+}
+int ReadAnyNumber(string msg) {
+	int number;
+	cout << msg ;
+	cin >> number;
 	return number;
 }
 
@@ -275,4 +290,109 @@ void CopyArray(int orginalArray[100], int orginalArrayTotalLength,int copiedArra
 	{
 		copiedArray[i] = orginalArray[i];
 	}
+}
+
+bool IsPostiveNumber(int number) {
+	return number > 0;
+}
+
+bool IsPrimeNumber(int number) {
+	int halfNumber = (int)GetHalfNumber(number);
+
+
+	for (short i = 2; i <= halfNumber; i++)
+	{
+		if (number % i == 0) {
+			return 0;
+			break;
+		}
+		
+	}
+	return 1;
+};
+	
+
+
+void CopyPrimeNumbersFromAnyArray(int sourceArray[100], int totalLength, int distenationArray[100],int &distenationLength) {
+	int counter = 0;
+	for (short i = 0; i < totalLength; i++)
+	{
+		if (IsPrimeNumber(sourceArray[i])) {
+			distenationArray[counter] = sourceArray[i];
+			counter++;
+			cout <<"Counter is Here" << counter << endl;
+		}
+		
+	}
+	distenationLength = counter;
+}
+
+
+
+void SumOfTwoArrays(sArrays &arrays) {
+	
+	for (short i = 0; i < arrays.totalLength; i++)
+	{
+	  arrays.sumArray[i] = arrays.array2[i] + arrays.array1[i];
+
+	}
+}
+
+void ReverseArray(int array1[100], int array2[100],int length) {
+	for (short i = 0; i < length; i++)
+	{
+		
+		array2[i] = array1[length-1-i];
+	}
+}
+void FillArrayWithRandomKeys(string array[100], int length) {
+	for (short i = 0; i < length; i++)
+	{
+		array[i] = GnereateKeys();
+	}
+};
+void PrintArrayWithKeys(string array[100], int length) {
+	for (short i = 0; i < length; i++)
+	{
+		cout << "Array [" << i << "]:" << array[i] << endl;
+	}
+}
+
+
+int GetItemIndexInIntArray(int array[100],int length,int itemToSearch) {
+	for (short i = 0; i < length; i++)
+	{
+		if (array[i] == itemToSearch) {
+			return i;
+			break;
+		}
+		
+	}
+	
+	return -1;
+}
+void PrintItemLocationInArray(int index){
+	cout << "Item Location: " << index + 1 << endl;
+}
+
+bool IsItemInIntArray(int array[100], int length, int itemToSearch) {
+	return GetItemIndexInIntArray(array,length,itemToSearch) > -1;
+}
+
+
+void FillIntArray(int array[100], int& length) {
+	int stop =0;
+	int index = 0;
+	do
+	{
+		int number = ReadAnyNumber("Please Enter A Number:");
+		array[index] = number;
+		++index;
+		stop = ReadAnyNumber("Do you want to add more numbers? [1]:Yes   [0]:No:");
+		
+
+	} while (stop!=0);
+	length = index;
+	cout << "Array Length:" << length << endl;
+	PrintArray(length,array);
 }

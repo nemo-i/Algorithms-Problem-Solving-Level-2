@@ -466,6 +466,27 @@ int CountOddNumberInArray(int array[100], int length) {
 }
 
 int CountEvenNumberInArray(int array[100], int length) {
-	int odds = CountOddNumberInArray(array,length);
-	return length - odds;
+	return length - CountOddNumberInArray(array, length);
+}
+void FillArrayWithRandomNumbers(int& totalLength, int array[100],int from,int to) {
+	// to make this function work probably put this code in main file 
+//srand((unsigned)time(NULL));
+	cout << "Enter Array Length" << endl;
+	cin >> totalLength;
+	for (short i = 0; i < totalLength; i++)
+	{
+		array[i] = RandomNumber(from,to);
+	}
+}
+
+
+int CountPostiveNumberInArray(int array[100], int length) {
+	int count = 0;
+	for (short i = 0; i < length; i++)
+	{
+		if (array[i] > 0) {
+			count++;
+}
+	}
+	return count;
 }

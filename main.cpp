@@ -6,15 +6,15 @@
 using namespace std;
 int main() {
 	srand((unsigned)time(NULL));
-	int totalLength;
+	int totalLength = 10;
 
-	int array[100];
+	int array[100] = {10,10,10,20,20,30,50,55,50,70};
 	int copiedArray[100];
 	int copiedArrayLength =0;
 	sArrays arrays;
 	
-	FillArrayWithRandomNumbers(totalLength,array);
+	
 	PrintArray(totalLength, array);
-	AddOnlyOddNumberToArray(array,totalLength,copiedArray,copiedArrayLength);
+	AddDistictNumberToArray(array,totalLength,copiedArray,copiedArrayLength);
 	PrintArray(copiedArrayLength,copiedArray);
 }

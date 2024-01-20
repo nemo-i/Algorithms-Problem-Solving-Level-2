@@ -426,3 +426,21 @@ void AddOnlyOddNumberToArray(int array[100],int length,int desArray[100],int &de
 		}
 	}
 }
+void AddOnlyPrimeNumbersToArray(int array[100], int length, int desArray[100], int& desLength) {
+	for (short i = 0; i < length; i++)
+	{
+		if (IsPrimeNumber(array[i])) {
+			AddArrayElement(desArray, desLength, array[i]);
+		}
+	}
+}
+
+void AddDistictNumberToArray(int array[100], int length, int desArray[100], int& desLength) {
+	
+	for (short i = 0; i < length; i++)
+	{
+		if(!IsItemInIntArray(desArray,desLength,array[i])){
+			AddArrayElement(desArray,desLength,array[i]);
+		}
+	}
+}

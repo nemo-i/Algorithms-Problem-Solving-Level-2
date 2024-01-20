@@ -5,6 +5,5 @@
 #include <cstdlib>
 using namespace std;
 int main() {
-	float number = 25;
-	cout << MySquareRoot(number)<<endl;
+
 }

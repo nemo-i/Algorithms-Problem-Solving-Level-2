@@ -86,3 +86,4 @@ int CountEvenNumberInArray(int array[100], int length);
 int CountPostiveNumberInArray(int array[100], int length);
 void FillArrayWithRandomNumbers(int& totalLength, int array[100], int from, int to);
 int CountNegativeNumberInArray(int array[100], int length);
+int GetABSNumber(int number);

@@ -493,3 +493,12 @@ int CountPostiveNumberInArray(int array[100], int length) {
 int CountNegativeNumberInArray(int array[100], int length) {
 	return length - CountPostiveNumberInArray(array,length);
 }
+int GetABSNumber(int number) {
+	if (number > 0) {
+		return number;
+	}
+	else
+	{
+		return (0 - number);
+	}
+}

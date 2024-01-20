@@ -82,3 +82,4 @@ void AddDistictNumberToArray(int array[100], int length, int desArray[100], int&
 
 bool IsArrayPalindrome(int array[100], int length);
 int CountOddNumberInArray(int array[100], int length);
+int CountEvenNumberInArray(int array[100], int length);

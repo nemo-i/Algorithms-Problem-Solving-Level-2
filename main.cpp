@@ -15,5 +15,6 @@ int main() {
 	
 	FillArrayWithRandomNumbers(totalLength, array);
 	PrintArray(totalLength, array);
-	cout << CountOddNumberInArray(array, totalLength) << endl;
+	cout << "Even Numbers : " << CountEvenNumberInArray(array, totalLength) << endl;
+	cout << "Odd Numbers : " << CountOddNumberInArray(array, totalLength) << endl;
 }

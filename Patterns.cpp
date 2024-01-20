@@ -464,3 +464,8 @@ int CountOddNumberInArray(int array[100], int length) {
 	}
 	return odds;
 }
+
+int CountEvenNumberInArray(int array[100], int length) {
+	int odds = CountOddNumberInArray(array,length);
+	return length - odds;
+}

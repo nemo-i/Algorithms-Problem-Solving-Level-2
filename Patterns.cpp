@@ -490,3 +490,6 @@ int CountPostiveNumberInArray(int array[100], int length) {
 	}
 	return count;
 }
+int CountNegativeNumberInArray(int array[100], int length) {
+	return length - CountPostiveNumberInArray(array,length);
+}

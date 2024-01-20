@@ -73,3 +73,7 @@ void PrintItemLocationInArray(int index);
 bool IsItemInIntArray(int array[100], int length, int itemToSearch);
 void FillIntArray(int array[100], int& length);
 int ReadAnyNumber(string msg);
+void CopyArrayWithAddArrayElement(int array[100], int length, int desArray[100], int& destLength);
+void AddArrayElement(int array[100], int& length, int item);
+bool IsOddNumber(int number);
+void AddOnlyOddNumberToArray(int array[100], int length, int desArray[100], int& desLength);

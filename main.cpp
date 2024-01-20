@@ -10,9 +10,11 @@ int main() {
 
 	int array[100];
 	int copiedArray[100];
-	int copiedArrayLength;
+	int copiedArrayLength =0;
 	sArrays arrays;
 	
-	FillIntArray(array,totalLength);
-
+	FillArrayWithRandomNumbers(totalLength,array);
+	PrintArray(totalLength, array);
+	AddOnlyOddNumberToArray(array,totalLength,copiedArray,copiedArrayLength);
+	PrintArray(copiedArrayLength,copiedArray);
 }

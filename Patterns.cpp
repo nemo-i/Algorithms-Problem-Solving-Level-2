@@ -396,3 +396,33 @@ void FillIntArray(int array[100], int& length) {
 	cout << "Array Length:" << length << endl;
 	PrintArray(length,array);
 }
+
+void AddArrayElement(int array[100], int &length,int item) {
+	length++;
+	array[length - 1] = item;
+}
+void CopyArrayWithAddArrayElement(int array[100], int length,int desArray[100],int &destLength) {
+	for (short i = 0; i < length; i++)
+	{
+		AddArrayElement(desArray,destLength,array[i]);
+	}
+}
+
+bool IsOddNumber(int number) {
+	if (number % 2 != 0) {
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+void AddOnlyOddNumberToArray(int array[100],int length,int desArray[100],int &desLength) {
+	for (short i = 0; i < length; i++)
+	{
+		if (IsOddNumber(array[i])) {
+			AddArrayElement(desArray,desLength,array[i]);
+		}
+	}
+}
